@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blank Site 000</title>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    </head>
+    <!--                                 -->
+
+
+    <body style="background: url(../img/440151.webp); background-size:cover; height:100vh;">
+
+        <header>
+            <nav 
+                class="navbar navbar-expand-lg navbar-dark" 
+                style="background: transparent;">
+                
+                <a class="navbar-brand" href="#">
+                    <img 
+                        class="img-fluid" 
+                        src="img/frog-solid-white.svg" 
+                        alt="" 
+                        style="height: 2rem;"
+                        id="frog-icon"
+                    >
+                </a>
+
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon" style=" background-image: url(../img/dots-solid-white.svg);"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flights</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Frozen tadpoles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fat species</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Feasibilty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-5" href="#">Fly bait</a>
+                        </li>
+                    </ul>
+                    
+                    <form class="form-inline my-2 my-lg-0">
+                        <button type="button" class="btn btn-outline-light">Sign Up</button>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="container p-5 text-center card-0" style="margin-left: calc(3vw);">
+                <div class="card" style= "width:calc(80vw); background: rgba(42, 122, 218, 0.4);">
+                    <div class="card-body" >
+                        <h5 style="color: white; font-size: 1.7rem;" class="card-title">Find Frolicking Frogs For Free</h5>
+                        <h6 style="color: white" class="card-subtitle mb-2">(Sub Heading)</h6>
+                        <a href="#" class="btn btn-secondary" >Search Page</a>
+                        <a href="#" class="btn btn-secondary" >Info Page</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+              
+
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg col-md col-sm">
+                        <div class="card card-1" style="width: 14rem; background: rgba(42, 122, 218, 0.2);">
+                            <img class="img-fluid card-img-top" src="https://picsum.photos/g/560/560?/image=1036" alt=""> 
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Florence, Italy</h5>
+                                <a href="#" class="btn btn-secondary" >Frogs in this area</a> <!--style="background: grey; border-color: grey;-->
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg col-md col-sm">
+                        <div class="card card-2" style="width: 14rem; background: rgba(42, 122, 218, 0.2);">
+                            <img class="img-fluid card-img-top" src="https://picsum.photos/g/560/560?/image=1031" alt=""> 
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Florida, U.S.</h5>
+                                <a href="#" class="btn btn-secondary" >Frogs in this area</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg col-md col-sm">
+                        <div class="card card-3" style="width: 14rem; background: rgba(42, 122, 218, 0.2);">
+                            <img class="img-fluid card-img-top" src="https://picsum.photos/g/560/560?/image=1032" alt=""> 
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Fengcheng, China</h5>
+                                <a href="#" class="btn btn-secondary" >Frogs in this area</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md col-sm">
+                        <div class="card card-4" style="width: 14rem; background: rgba(42, 122, 218, 0.2);">
+                            <img class="img-fluid card-img-top" src="https://picsum.photos/g/560/560?/image=1030" alt=""> 
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Fukuoka, Japan</h5>
+                                <a href="#" class="btn btn-secondary" >Frogs in this area</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <style>
+
+                @media(max-width: 600px)
+                {
+                    main
+                    {
+                        display: grid;
+                        max-width: 1080px;
+                        margin: 0 auto;
+                        grid-column-gap: 1.5rem;
+                        grid-row-gap: 0.5rem;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-areas: 
+                        "card-1 card-1"
+                        "card-2 card-2"
+                        "card-3 card-3"
+                        "card-4 card-4";
+                    }
+
+                    .row
+                    {
+                        margin-left: calc(25vw);
+                    }
+
+                    .card-0
+                    {
+                        margin-left: 0;
+                    }
+                    .card-1
+                    {
+                    grid-area:card-1;
+                    }
+                    .card-2
+                    {
+                    grid-area:card-2;
+                    }
+                    .card-3
+                    {
+                    grid-area:card-3;
+                    }
+                    .card-4
+                    {
+                    grid-area:card-4;
+                    }
+                }
+
+                @media(max-width: 720px)
+                {
+                    .card-0
+                    {
+                        margin-left: calc(1vw);
+                    }
+                }
+
+            </style>
+
+
+
+
+
+
+            
+
+
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- ORDER MATTERS -->
+            <script src="js/jquery/jquery.min.js"></script>
+            <script src="js/popper/popper.min.js"></script>
+            <script src="js/bootstrap/bootstrap.min.js"></script>
+        </main>
+
+        <footer></footer>
+
+    </body>
+
+</html>
